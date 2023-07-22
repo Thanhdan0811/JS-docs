@@ -23,3 +23,15 @@ ids.delete(1); // => delete it, if not found show no errors.
 - Store (nested) data of any kind and length and key values are allowed.
 - Iterable, also some special map methods available.
 - Order is guaranteed, duplicates are Not allowed, key-based access.
+
+
+```
+const person1 = {name: 'Max'};
+const person2 = {name: 'Manual'};
+
+const personData = new Map([[person1, [{date:'yesterday', price: 10}]]]);
+
+console.log(personData);
+console.log(personData.get(person1));
+
+```
